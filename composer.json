@@ -1,5 +1,5 @@
 {
-  "name": "marem/job-bundle",
+  "name": "marem/etl-bundle",
   "type": "symfony-bundle",
   "description": "manage batch jobs in etl style",
   "keyword": ["etl", "batch", "job"],
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Marem\\Bundle\\JobBundle": "src/"
+      "Marem\\Bundle\\EtlBundle": "src/"
     }
   },
   "config": {

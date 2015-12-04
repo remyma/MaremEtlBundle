@@ -1,6 +1,6 @@
 <?php
 
-namespace Marem\Bundle\JobBundle\Entity;
+namespace Marem\Bundle\EtlBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

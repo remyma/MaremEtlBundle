@@ -1,9 +1,9 @@
 <?php
 
-namespace Marem\Bundle\JobBundle\Command;
+namespace Marem\Bundle\EtlBundle\Command;
 
 
-use Marem\Bundle\JobBundle\Entity\Job;
+use Marem\Bundle\EtlBundle\Entity\Job;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -62,7 +62,7 @@ abstract class JobCommand extends ContainerAwareCommand {
 
     protected function beforeJob() {
         $em = $this->getEntityManager();
-        $this->job = $em->getRepository('MaremJobBundle:Job')->findOneBy(array('name' => $this->getName()));
+        $this->job = $em->getRepository('MaremEtlBundle:Job')->findOneBy(array('name' => $this->getName()));
 
         if ($this->job == null) {
             $job = new Job();
