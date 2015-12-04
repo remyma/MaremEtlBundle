@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Marem\\Bundle\\EtlBundle": "src/"
+      "Marem\\Bundle\\EtlBundle\\": ""
     }
   },
   "config": {
