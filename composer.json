@@ -1,0 +1,28 @@
+{
+  "name": "marem/job-bundle",
+  "type": "symfony-bundle",
+  "description": "manage batch jobs in etl style",
+  "keyword": ["etl", "batch", "job"],
+  "homepage": "https://github.com/remyma/MaremJobBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name":     "Matthieu REMY",
+      "email":    "remy.matthieu@gmail.com",
+      "homepage": "https://github.com/remyma"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+
+    "symfony/framework-bundle": "^2.7.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Marem\\Bundle\\JobBundle": "src/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}
